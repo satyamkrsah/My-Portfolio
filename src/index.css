@@ -10,7 +10,7 @@
     --color-heading-secondary: #fffafa;
     --color-body: #f7fbff;
     --color-accent: #3B82F6;
-    --color-muted: #ffffff;
+    --color-muted: #64748B;
   }
   
   /* Light mode color overrides */
@@ -132,7 +132,7 @@
 }
 
 .light .glass-card {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.633);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(15, 23, 42, 0.08);
@@ -210,7 +210,7 @@
    Premium Custom Cursor
 ========================= */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html,
   body,
   a,
@@ -221,7 +221,7 @@
   [role="button"] {
     cursor: none !important;
   }
-}
+} */
 
 /* Smooth Selection */
 ::selection {

@@ -6,7 +6,6 @@ import { portfolioData } from '../data/portfolioData';
 import Navbar from '../components/Navbar';
 import FloatingParticles from '../components/FloatingParticles';
 import ScrollToTop from '../components/ScrollToTop';
-import MouseCursor from '../components/MouseCursor';
 import Footer from '../sections/Footer';
 
 export default function ProjectDetailPage() {
@@ -16,8 +15,7 @@ export default function ProjectDetailPage() {
 
   if (!project) {
     return (
-      <div className="relative min-h-screen text-white dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300 cursor-none">
-        <MouseCursor />
+      <div className="relative min-h-screen text-white dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300">
         <FloatingParticles />
         <Navbar />
         <main className="relative z-10 pt-40 pb-20">
@@ -37,8 +35,7 @@ export default function ProjectDetailPage() {
   }
 
   return (
-    <div className="relative min-h-screen text-white dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300 cursor-none">
-      <MouseCursor />
+    <div className="relative min-h-screen text-white dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300">
       <FloatingParticles />
       <Navbar />
 

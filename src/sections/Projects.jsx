@@ -69,13 +69,13 @@ export default function Projects() {
               <GlassCard className="flex flex-col h-full overflow-hidden p-0 cursor-pointer" hoverable={true}>
                 {/* Image Container with overlay */}
                 <div 
-                  className="relative overflow-hidden h-48 sm:h-52 w-full bg-slate-950/20 dark:bg-slate-950/40 group cursor-pointer"
+                  className="relative overflow-hidden h-48 sm:h-52 w-full bg-slate-950/20 dark:bg-slate-950/40 group cursor-pointer rounded-2xl"
                   onClick={() => navigate(`/project/${project.id}`)}
                 >
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
                   {/* Backdrop Overlay with gradient */}
@@ -85,18 +85,6 @@ export default function Projects() {
                   <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/50 backdrop-blur-md">
                     <span className="text-xs font-bold text-blue-300">{project.category}</span>
                   </div>
-
-                  {/* View Details Badge - appears on hover */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileHover={{ opacity: 1, y: 0 }}
-                    className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm"
-                  >
-                    <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white/90 text-white font-semibold hover:bg-white transition-all">
-                      View Details
-                      <FiArrowRight className="w-5 h-5" />
-                    </button>
-                  </motion.div>
                 </div>
 
                 {/* Project Details */}
@@ -115,7 +103,7 @@ export default function Projects() {
 
                   <div className="space-y-6">
                     {/* Technologies Tag List */}
-                    <div className="flex flex-wrap gap-2">
+                    {/* <div className="flex flex-wrap gap-2">
                       {project.tech.slice(0, 4).map((t, idx) => (
                         <motion.span
                           key={idx}
@@ -130,7 +118,7 @@ export default function Projects() {
                           +{project.tech.length - 4} more
                         </span>
                       )}
-                    </div>
+                    </div> */}
 
                     {/* Source & Demo actions */}
                     <div className="flex items-center justify-between border-t border-slate-200/50 dark:border-white/5 pt-4">

@@ -1,9 +1,12 @@
+import Cityweather from "../assets/cityweather.png";
+import portfolio from "../assets/portfolio.png";
+
 export const portfolioData = {
   personalInfo: {
     name: "Satyam Kumar Sah",
     role: "Computer Science Engineering Student & Full Stack Developer",
     location: "Bihar, India",
-    bio: "Passionate Full Stack Developer and Computer Science student focused on building modern, scalable, and user-friendly web applications.",
+    bio: "Passionate about building modern, scalable, and user-friendly digital experiences. Constantly exploring new technologies and turning ideas into impactful solutions.",
     email: "satyamkumarsah7631@gmail.com",
     phone: "+91 7631410643",
     github: "https://github.com/satyamkrsah",
@@ -11,7 +14,7 @@ export const portfolioData = {
     resumeUrl: "#", // Placeholder for download
   },
   stats: [
-    { label: "Projects Completed", value: 12, suffix: "+" },
+    { label: "Projects Completed", value: 9, suffix: "+" },
     { label: "Technologies Learned", value: 15, suffix: "+" },
     { label: "Years of Coding", value: 2, suffix: "+" },
   ],
@@ -48,25 +51,25 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "FindMyDoctor",
-      shortDescription: "A doctor search and appointment booking platform featuring comprehensive doctor profiles.",
-      description: "A full-stack doctor search and appointment booking platform designed to connect patients with healthcare professionals. The platform features comprehensive doctor profiles with specializations, clinic filtering, advanced search functionality, and real-time appointment booking management.",
-      fullDetails: "FindMyDoctor is a comprehensive healthcare booking platform built with modern web technologies. It allows users to search for doctors by specialization, location, and availability. The platform includes real-time appointment scheduling, patient reviews, clinic management, and secure payment integration.",
+      title: "Cityweather",
+      shortDescription: "A responsive weather application that provides real-time weather updates for cities worldwide.",
+      description: "CityWeather is a modern weather forecasting web application that allows users to search for any city and view current weather conditions, temperature, humidity, wind speed, and other essential weather details using live weather APIs.",
+      fullDetails: "The application integrates with a weather API to fetch real-time weather data and presents it through a clean, responsive, and user-friendly interface. Users can search for cities globally and get accurate weather information instantly.",
       features: [
-        "Advanced doctor search and filtering",
-        "Real-time appointment booking",
-        "Doctor profiles with ratings & reviews",
-        "Clinic management system",
-        "Payment gateway integration",
-        "Email notifications"
+        "Real-time weather updates",
+    "City-based weather search",
+    "Temperature, humidity & wind details",
+    "Responsive design for all devices",
+    "Fast API integration",
+    "Clean and intuitive UI"
       ],
-      challenge: "The main challenge was handling real-time data synchronization for appointment slots across multiple clinics and ensuring secure patient data handling.",
-      solution: "Implemented WebSockets for real-time updates and MongoDB transactions for data consistency. Used bcrypt for password hashing and JWT for authentication.",
-      tech: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express", "REST API"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      image: "/assets/findmydoctor.png",
-      category: "Full Stack"
+      challenge: "Fetching and displaying accurate real-time weather data while maintaining a fast and responsive user experience.",
+      solution: "Integrated a weather API with efficient error handling, optimized API requests, and built a responsive frontend using modern web development practices.",
+      tech: ["React","JavaScript","HTML5","CSS3","Vite","Weather API","GitHub"],
+      githubUrl: "https://github.com/satyamkrsah/Cityweather",
+      liveUrl: "https://cityweather-rho.vercel.app/",
+      image: Cityweather,
+      category: "Full stack"
     },
     {
       id: 2,
@@ -87,36 +90,36 @@ export const portfolioData = {
       tech: ["React", "Tailwind CSS", "Framer Motion", "React Router", "React Icons"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      image: "/assets/portfolio.png",
+      image: portfolio,
       category: "Frontend"
     },
     {
       id: 3,
-      title: "Academic Engineering Projects",
-      shortDescription: "A collection of software engineering and core computer science projects.",
-      description: "A collection of software engineering and core computer science projects developed during Bachelor of Engineering coursework, focusing on algorithms, system design, and database management.",
-      fullDetails: "This project collection includes various academic projects covering Software Engineering principles, Database Management Systems, Operating Systems concepts, and algorithms implementation.",
+      title: "FindMyDoctor",
+      shortDescription: "A doctor search and appointment booking platform featuring comprehensive doctor profiles.",
+      description: "A full-stack doctor search and appointment booking platform designed to connect patients with healthcare professionals. The platform features comprehensive doctor profiles with specializations, clinic filtering, advanced search functionality, and real-time appointment booking management.",
+      fullDetails: "FindMyDoctor is a comprehensive healthcare booking platform built with modern web technologies. It allows users to search for doctors by specialization, location, and availability. The platform includes real-time appointment scheduling, patient reviews, clinic management, and secure payment integration.",
       features: [
-        "Algorithm implementations",
-        "Database design & optimization",
-        "OS concepts implementation",
-        "System design patterns",
-        "Code documentation",
-        "Test suites"
+        "Advanced doctor search and filtering",
+        "Real-time appointment booking",
+        "Doctor profiles with ratings & reviews",
+        "Clinic management system",
+        "Payment gateway integration",
+        "Email notifications"
       ],
-      challenge: "Understanding and implementing complex computer science concepts while applying software engineering best practices.",
-      solution: "Focused on clean code principles, proper documentation, and comprehensive testing. Used design patterns and architectural principles.",
-      tech: ["Python", "Java", "SQL", "Git", "Software Engineering", "DBMS", "Operating Systems"],
+      challenge: "The main challenge was handling real-time data synchronization for appointment slots across multiple clinics and ensuring secure patient data handling.",
+      solution: "Implemented WebSockets for real-time updates and MongoDB transactions for data consistency. Used bcrypt for password hashing and JWT for authentication.",
+      tech: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Express", "REST API"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
-      image: "/assets/academic.png",
-      category: "Academic"
+      image: "/assets/findmydoctor.png",
+      category: "Full Stack"
     }
   ],
   education: {
     degree: "Bachelor of Engineering in Computer Science & Engineering",
     institution: "Computer Science Engineering Institution",
-    period: "2023 - Present",
+    period: "2024-2028 (Expected)",
     description: "Focusing on core computer science foundations, engineering principles, and practical software design paradigms.",
     subjects: [
       "Software Engineering",

@@ -2,13 +2,13 @@ import Skills from '../sections/Skills';
 import Navbar from '../components/Navbar';
 import FloatingParticles from '../components/FloatingParticles';
 import ScrollToTop from '../components/ScrollToTop';
-import MouseCursor from '../components/MouseCursor';
+// import MouseCursor from '../components/MouseCursor';
 import Footer from '../sections/Footer';
 
 export default function SkillsPage() {
   return (
-    <div className="relative min-h-screen text-slate-800 dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300 cursor-none">
-      <MouseCursor />
+    <div className="relative min-h-screen text-slate-800 dark:text-slate-100 bg-slate-50 dark:bg-dark-950 transition-colors duration-300">
+      {/* <MouseCursor /> */}
       <FloatingParticles />
       <Navbar />
       <main className="relative z-10 pt-24">

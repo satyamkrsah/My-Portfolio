@@ -37,7 +37,7 @@ export default function Achievements() {
   };
 
   return (
-    <section id="achievements" className="py-20 relative overflow-hidden bg-slate-900/10 dark:bg-slate-950/10">
+    <section id="achievements" className="py-20 relative overflow-hidden dark:bg-slate-950/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
