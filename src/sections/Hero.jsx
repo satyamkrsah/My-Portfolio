@@ -88,7 +88,7 @@ export default function Hero() {
               </Link>
               
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1FKSfE2roPt11lhuOnLEJz97c4gNkBcg8/view?usp=drive_link"
                 download
                 className="px-8 py-4 rounded-2xl border border-slate-200 dark:border-white/10 bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 font-semibold flex items-center gap-2 text-slate-700 dark:text-slate-300 hover:scale-105 active:scale-95 transition-all duration-200"
               >

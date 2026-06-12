@@ -3,20 +3,49 @@ import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import GlassCard from '../components/GlassCard';
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const { personalInfo } = portfolioData;
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setSubmitted(true);
+  //   setTimeout(() => {
+  //     setFormData({ name: '', email: '', subject: '', message: '' });
+  //     setSubmitted(false);
+  //   }, 5000);
+  // };
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  emailjs.send(
+    'service_shzlq6i',
+    'template_ooa2hzg',
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    },
+    'uePJMv0BZMiDF9RP2'
+  )
+  .then(() => {
     setSubmitted(true);
+
     setTimeout(() => {
       setFormData({ name: '', email: '', subject: '', message: '' });
       setSubmitted(false);
-    }, 5000);
-  };
+    }, 4000);
+  })
+  .catch((error) => {
+    console.log(error);
+    alert('Message send failed!');
+  });
+};
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -65,7 +94,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-bold uppercase tracking-widest">Email</p>
-                    <a href={`mailto:${personalInfo.email}`} className="text-base sm:text-lg font-bold text-slate-200 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+                    <a href={`mailto:${personalInfo.email}`} className="text-base sm:text-lg font-bold text-slate-200 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors break-all">
                       {personalInfo.email}
                     </a>
                   </div>

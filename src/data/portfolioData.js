@@ -1,6 +1,7 @@
 import Cityweather from "../assets/cityweather.png";
 import portfolio from "../assets/portfolio.png";
 
+
 export const portfolioData = {
   personalInfo: {
     name: "Satyam Kumar Sah",
@@ -11,7 +12,7 @@ export const portfolioData = {
     phone: "+91 7631410643",
     github: "https://github.com/satyamkrsah",
     linkedin: "https://www.linkedin.com/in/satyam-kumar-sah-50b54032b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    resumeUrl: "#", // Placeholder for download
+    resumeUrl: "https://drive.google.com/file/d/1FKSfE2roPt11lhuOnLEJz97c4gNkBcg8/view?usp=drive_link", // Placeholder for download
   },
   stats: [
     { label: "Projects Completed", value: 9, suffix: "+" },
@@ -88,8 +89,8 @@ export const portfolioData = {
       challenge: "Creating a visually appealing design while maintaining excellent performance and accessibility standards.",
       solution: "Used Framer Motion for animations with proper performance optimization. Implemented lazy loading for images and used Tailwind CSS for efficient styling.",
       tech: ["React", "Tailwind CSS", "Framer Motion", "React Router", "React Icons"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/satyamkrsah/My-Portfolio",
+      liveUrl: "https://satyamkrsah.vercel.app/",
       image: portfolio,
       category: "Frontend"
     },
