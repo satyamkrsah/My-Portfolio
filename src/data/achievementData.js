@@ -22,7 +22,7 @@ export const achievementData = [
   {
     id: 2,
     title: "Global AI Hackathon Winner",
-    coverImage: "/achievements/hackathon_winner.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/hackathon_winner.png",
       "/achievements/open_source_badge.png",
@@ -37,7 +37,7 @@ export const achievementData = [
   {
     id: 3,
     title: "Open Source Contributor of the Year",
-    coverImage: "/achievements/open_source_badge.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/open_source_badge.png",
       "/achievements/hackathon_winner.png",
@@ -52,7 +52,7 @@ export const achievementData = [
   {
     id: 4,
     title: "Code Quality Excellence Award",
-    coverImage: "/achievements/award_excellence.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/award_excellence.png",
       "/achievements/cert_web_dev.png",
@@ -67,7 +67,7 @@ export const achievementData = [
   {
     id: 5,
     title: "Full Stack Developer Nanodegree",
-    coverImage: "/achievements/cert_web_dev.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/cert_web_dev.png",
       "/achievements/open_source_badge.png",
@@ -81,7 +81,7 @@ export const achievementData = [
   {
     id: 6,
     title: "Best UI/UX Design Hackathon",
-    coverImage: "/achievements/hackathon_winner.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/hackathon_winner.png",
       "/achievements/award_excellence.png",
@@ -95,7 +95,7 @@ export const achievementData = [
   {
     id: 7,
     title: "Top 1% StackOverflow Contributor",
-    coverImage: "/achievements/open_source_badge.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/open_source_badge.png",
       "/achievements/cert_web_dev.png",
@@ -109,7 +109,7 @@ export const achievementData = [
   {
     id: 8,
     title: "Innovation in Engineering Award",
-    coverImage: "/achievements/award_excellence.png",
+    coverImage: "/achievements/photoshop.png",
     gallery: [
       "/achievements/award_excellence.png",
       "/achievements/hackathon_winner.png",
