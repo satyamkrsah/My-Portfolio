@@ -79,7 +79,7 @@ export default function Contact() {
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
             <GlassCard className="flex-1 flex flex-col justify-between space-y-8" hoverable={false}>
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-white dark:text-slate-100">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
                   Contact Information
                 </h3>
                 <p className="text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
@@ -94,7 +94,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-bold uppercase tracking-widest">Email</p>
-                    <a href={`mailto:${personalInfo.email}`} className="text-base sm:text-lg font-bold text-slate-200 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors break-all">
+                    <a href={`mailto:${personalInfo.email}`} className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors break-all">
                       {personalInfo.email}
                     </a>
                   </div>
@@ -106,7 +106,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-bold uppercase tracking-widest">Phone</p>
-                    <a href={`tel:${personalInfo.phone}`} className="text-base sm:text-lg font-bold text-slate-200 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+                    <a href={`tel:${personalInfo.phone}`} className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
                       {personalInfo.phone}
                     </a>
                   </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-bold uppercase tracking-widest">Location</p>
-                    <p className="text-base sm:text-lg font-bold text-slate-200 dark:text-slate-200">
+                    <p className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-200">
                       {personalInfo.location}
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export default function Contact() {
                   <div className="p-4 rounded-full bg-green-500/10 text-green-500 border border-green-500/25">
                     <FiSend className="w-10 h-10 animate-bounce" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white dark:text-slate-100">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
                     Message Sent!
                   </h3>
                   <p className="text-slate-500 dark:text-slate-400 font-medium">
@@ -151,13 +151,13 @@ export default function Contact() {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <h3 className="text-2xl font-bold text-white dark:text-slate-100 mb-2">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
                     Send Message
                   </h3>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                      <label htmlFor="name" className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                         Your Name
                       </label>
                       <input
@@ -167,13 +167,13 @@ export default function Contact() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-white dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
-                        placeholder="John Doe"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
+                        placeholder="your name"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                      <label htmlFor="email" className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                         Email Address
                       </label>
                       <input
@@ -183,14 +183,14 @@ export default function Contact() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-white dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
-                        placeholder="john@example.com"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
+                        placeholder="youremail@example.com"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    <label htmlFor="subject" className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                       Subject
                     </label>
                     <input
@@ -200,13 +200,13 @@ export default function Contact() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-white dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors"
                       placeholder="Project Discussion"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                    <label htmlFor="message" className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                       Message
                     </label>
                     <textarea
@@ -216,14 +216,14 @@ export default function Contact() {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-white dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/50 dark:bg-slate-900/40 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 transition-colors resize-none"
                       placeholder="Hi Satyam, I would like to build..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 text-white font-semibold flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] transition-all duration-150 shadow-glass"
+                    className="w-full py-4 rounded-xl bg-blue-600 text-white dark:text-white font-semibold flex items-center justify-center gap-2 hover:bg-blue-700 hover:scale-[1.01] active:scale-[0.99] transition-all duration-150 shadow-glass"
                   >
                     <span>Send Message</span>
                     <FiSend className="w-4.5 h-4.5" />

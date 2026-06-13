@@ -149,26 +149,26 @@ export const portfolioData = {
       description: "Consistently expanding skill set with modern libraries, cloud services, and framework optimizations."
     }
   ],
-  services: [
-    {
-      title: "Full Stack Web Development",
-      description: "End-to-end development of modern web applications. From secure database configurations to interactive client-side logic."
-    },
-    {
-      title: "Frontend Development",
-      description: "Crafting highly aesthetic, responsive, accessible, and fast web pages utilizing modern React architectures and CSS."
-    },
-    {
-      title: "Backend Development",
-      description: "Designing structured RESTful APIs, securing API endpoints, managing database relationships, and server-side optimization."
-    },
-    {
-      title: "Responsive Website Design",
-      description: "Ensuring visual fidelity, performance metrics, and responsive adapts across mobile, tablet, and desktop monitors."
-    },
-    {
-      title: "UI/UX Implementation",
-      description: "Converting design mockups into living frontends, embedding smooth transitions, micro-interactions, and visual feedback."
-    }
-  ]
+  // services: [
+  //   {
+  //     title: "Full Stack Web Development",
+  //     description: "End-to-end development of modern web applications. From secure database configurations to interactive client-side logic."
+  //   },
+  //   {
+  //     title: "Frontend Development",
+  //     description: "Crafting highly aesthetic, responsive, accessible, and fast web pages utilizing modern React architectures and CSS."
+  //   },
+  //   {
+  //     title: "Backend Development",
+  //     description: "Designing structured RESTful APIs, securing API endpoints, managing database relationships, and server-side optimization."
+  //   },
+  //   {
+  //     title: "Responsive Website Design",
+  //     description: "Ensuring visual fidelity, performance metrics, and responsive adapts across mobile, tablet, and desktop monitors."
+  //   },
+  //   {
+  //     title: "UI/UX Implementation",
+  //     description: "Converting design mockups into living frontends, embedding smooth transitions, micro-interactions, and visual feedback."
+  //   }
+  // ]
 };

@@ -1,17 +1,9 @@
 import { motion } from 'framer-motion';
-import { portfolioData } from '../data/portfolioData';
-import GlassCard from '../components/GlassCard';
-import { FiCheckCircle, FiCpu, FiLayers, FiTrendingUp } from 'react-icons/fi';
-
-const achievementIcons = [
-  <FiLayers className="w-8 h-8 text-blue-500" />,
-  <FiCpu className="w-8 h-8 text-purple-500" />,
-  <FiCheckCircle className="w-8 h-8 text-cyan-500" />,
-  <FiTrendingUp className="w-8 h-8 text-indigo-500" />,
-];
+import { useNavigate } from 'react-router-dom';
+import { achievementData } from '../data/achievementData';
 
 export default function Achievements() {
-  const { achievements } = portfolioData;
+  const navigate = useNavigate();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -24,10 +16,11 @@ export default function Achievements() {
   };
 
   const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
+    hidden: { y: 30, opacity: 0, scale: 0.95 },
     visible: {
       y: 0,
       opacity: 1,
+      scale: 1,
       transition: {
         type: 'spring',
         stiffness: 85,
@@ -65,23 +58,31 @@ export default function Achievements() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {achievements.map((achievement, idx) => (
-            <motion.div key={idx} variants={itemVariants}>
-              <GlassCard className="h-full flex flex-col items-start space-y-4" hoverable={true}>
-                <div className="p-3 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200/50 dark:border-white/5">
-                  {achievementIcons[idx % achievementIcons.length]}
+          {achievementData.map((achievement) => (
+            <motion.div 
+              key={achievement.id} 
+              variants={itemVariants}
+              whileHover={{ y: -8, scale: 1.03 }}
+              onClick={() => navigate(`/achievement/${achievement.id}`)}
+              className="cursor-pointer h-full group"
+            >
+              <div className="h-full flex flex-col overflow-hidden rounded-2xl bg-white/40 dark:bg-slate-900/40 backdrop-blur-md border border-slate-200/50 dark:border-white/10 shadow-lg group-hover:shadow-xl group-hover:shadow-blue-500/10 transition-all duration-300">
+                <div className="w-full h-48 sm:h-56 relative overflow-hidden">
+                  <img 
+                    src={achievement.coverImage} 
+                    alt={achievement.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none opacity-80" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-bold text-white dark:text-slate-100">
+                <div className="p-5 flex-grow flex flex-col justify-center items-center">
+                  <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 text-center line-clamp-2">
                     {achievement.title}
                   </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-semibold">
-                    {achievement.description}
-                  </p>
                 </div>
-              </GlassCard>
+              </div>
             </motion.div>
           ))}
         </motion.div>

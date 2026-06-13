@@ -8,7 +8,8 @@ import SkillsPage from './pages/SkillsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import AchievementsPage from './pages/AchievementsPage';
-import ServicesPage from './pages/ServicesPage';
+import AchievementDetailPage from './pages/AchievementDetailPage';
+// import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 
 function AppWrapper() {
@@ -30,7 +31,8 @@ function AppWrapper() {
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/project/:projectId" element={<ProjectDetailPage />} />
       <Route path="/achievements" element={<AchievementsPage />} />
-      <Route path="/services" element={<ServicesPage />} />
+      <Route path="/achievement/:id" element={<AchievementDetailPage />} />
+      {/* <Route path="/services" element={<ServicesPage />} /> */}
       <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
