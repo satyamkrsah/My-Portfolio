@@ -36,13 +36,13 @@ export const portfolioData = {
         { name: "Node.js", percentage: 60 },
         { name: "Express.js", percentage: 75 },
         { name: "MongoDB", percentage: 95 },
-        { name: "MySQL", percentage: 50 },
+        { name: "MySQL", percentage: 40 },
       ]
     },
     {
       category: "Programming & Tools",
       items: [
-        { name: "Python", percentage: 60 },
+        { name: "C++", percentage: 60 },
         { name: "Java", percentage: 65 },
         { name: "Git & GitHub", percentage: 85 },
         { name: "VS Code", percentage: 99 },
