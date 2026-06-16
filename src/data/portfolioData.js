@@ -12,7 +12,7 @@ export const portfolioData = {
     phone: "+91 7631410643",
     github: "https://github.com/satyamkrsah",
     linkedin: "https://www.linkedin.com/in/satyam-kumar-sah-50b54032b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    resumeUrl: "https://drive.google.com/file/d/1FKSfE2roPt11lhuOnLEJz97c4gNkBcg8/view?usp=drive_link", // Placeholder for download
+    resumeUrl: "https://drive.google.com/file/d/17H9RGmAj3Qaf4bIlZtyfTub-k7yv0Bv1/view?usp=sharing", // Placeholder for download
   },
   stats: [
     { label: "Projects Completed", value: 9, suffix: "+" },
