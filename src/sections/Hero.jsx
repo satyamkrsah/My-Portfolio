@@ -49,7 +49,7 @@ export default function Hero() {
           >
 
             {/* Greeting Tag */}
-            <motion.div variants={itemVariants} className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-blue-500/30 dark:border-blue-500/30 light:border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs md:text-sm font-semibold tracking-wider uppercase">
+            <motion.div variants={itemVariants} className="font-days2 inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-blue-500/30 dark:border-blue-500/30 light:border-blue-500/20 bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs md:text-sm font-semibold tracking-wider uppercase">
               <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
               <span>Available for internships & projects</span>
             </motion.div>
@@ -59,13 +59,13 @@ export default function Hero() {
               <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-tight">
                 Hi, I'm <span className="text-accent">{name}</span>
               </h1>
-              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-slate-500 dark:text-slate-400 tracking-wide">
+              <p className="font-days text-lg sm:text-2xl md:text-3xl font-bold text-slate-500 dark:text-slate-400 tracking-wide">
                 {role}
               </p>
             </motion.div>
 
             {/* Bio */}
-            <motion.p variants={itemVariants} className="max-w-2xl text-base sm:text-lg md:text-xl text-slate-400 dark:text-slate-400 leading-relaxed font-medium">
+            <motion.p variants={itemVariants} className="font-days3 max-w-2xl text-base sm:text-lg md:text-xl text-slate-400 dark:text-slate-400 leading-relaxed font-medium">
               {bio}
             </motion.p>
 

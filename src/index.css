@@ -1,3 +1,72 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/Days of Love.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days {
+  font-family: "MyFont", sans-serif;
+}
+
+@font-face {
+  font-family: "MyFont2";
+  src: url("/fonts/NCLHalloweenDanger-Demo.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days2 {
+  font-family: "MyFont2", sans-serif;
+}
+@font-face {
+  font-family: "MyFont3";
+  src: url("/fonts/Bagus.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days3 {
+  font-family: "MyFont3", sans-serif;
+}
+@font-face {
+  font-family: "MyFont4";
+  src: url("/fonts/SlowBaStories-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days4 {
+  font-family: "MyFont4", sans-serif;
+}
+@font-face {
+  font-family: "MyFont5";
+  src: url("/fonts/SlowBaStories-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days5 {
+  font-family: "MyFont5", sans-serif;
+}
+
+@font-face {
+  font-family: "MyFont6";
+  src: url("/fonts/Pricemart Script Demo.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-days6 {
+  font-family: "MyFont6", sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -53,20 +53,20 @@ export default function About() {
           {/* Detailed summary and objective */}
           <div className="lg:col-span-7 space-y-6">
             <GlassCard hoverable={false}>
-              <h3 className="text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">
+              <h3 className="font-days text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">
                 Professional Journey
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+              <p className="font-days text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
                 What started as an interest in coding has evolved into a passion
                 for building digital products that make a difference. By
                 combining technical knowledge, practical experience, and
                 continuous learning, I focus on developing applications that are
                 both functional and user-centric.
               </p>
-              <h3 className="text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">
+              <h3 className="font-days3 text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">
                 Career Objective
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+              <p className="font-days text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
                 Aspiring Software Engineer with a strong foundation in Computer
                 Science and modern web technologies. Passionate about building
                 scalable applications, solving complex problems, and
@@ -77,7 +77,7 @@ export default function About() {
             {/* Stats list with scroll triggers */}
             <motion.div
               onViewportEnter={() => setStatsTriggered(true)}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-2 sm:px-0"
+              className="font-days5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-2 sm:px-0"
             >
               {stats.map((stat, idx) => (
                 <StatCard
@@ -106,7 +106,7 @@ export default function About() {
               <h4 className="text-lg font-bold text-slate-400 dark:text-slate-400 mb-4">
                 {education.institution}
               </h4>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+              <p className="font-days text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
                 Building a strong foundation in computer science principles, software engineering, and modern development technologies through academic learning and hands-on projects.
               </p>
               <div className="space-y-3">
@@ -117,9 +117,9 @@ export default function About() {
                   {education.subjects.slice(0, 4).map((subject, idx) => (
                     <li
                       key={idx}
-                      className="flex items-center space-x-2 font-medium"
+                      className=" flex items-center space-x-2 font-medium"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
+                      <span className=" w-1.5 h-1.5 rounded-full bg-purple-500" />
                       <span>{subject}</span>
                     </li>
                   ))}
