@@ -65,7 +65,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Bio */}
-            <motion.p variants={itemVariants} className="font-days3 max-w-2xl text-base sm:text-lg md:text-xl text-slate-400 dark:text-slate-400 leading-relaxed font-medium">
+            <motion.p variants={itemVariants} className="font-days max-w-2xl text-base sm:text-lg md:text-xl text-slate-400 dark:text-slate-400 leading-relaxed font-medium">
               {bio}
             </motion.p>
 

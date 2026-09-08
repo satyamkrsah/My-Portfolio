@@ -1,6 +1,7 @@
 import Cityweather from "../assets/cityweather.png";
 import portfolio from "../assets/portfolio.png";
 import spp from "../assets/spp.png";
+import rainroute from "../assets/rainroute-ai.png";
 
 export const portfolioData = {
   personalInfo: {
@@ -122,41 +123,6 @@ export const portfolioData = {
     },
     {
       id: 3,
-      title: "FindMyDoctor",
-      shortDescription:
-        "A doctor search and appointment booking platform featuring comprehensive doctor profiles.",
-      description:
-        "A full-stack doctor search and appointment booking platform designed to connect patients with healthcare professionals. The platform features comprehensive doctor profiles with specializations, clinic filtering, advanced search functionality, and real-time appointment booking management.",
-      fullDetails:
-        "FindMyDoctor is a comprehensive healthcare booking platform built with modern web technologies. It allows users to search for doctors by specialization, location, and availability. The platform includes real-time appointment scheduling, patient reviews, clinic management, and secure payment integration.",
-      features: [
-        "Advanced doctor search and filtering",
-        "Real-time appointment booking",
-        "Doctor profiles with ratings & reviews",
-        "Clinic management system",
-        "Payment gateway integration",
-        "Email notifications",
-      ],
-      challenge:
-        "The main challenge was handling real-time data synchronization for appointment slots across multiple clinics and ensuring secure patient data handling.",
-      solution:
-        "Implemented WebSockets for real-time updates and MongoDB transactions for data consistency. Used bcrypt for password hashing and JWT for authentication.",
-      tech: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "REST API",
-      ],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      image: "/assets/findmydoctor.png",
-      category: "Full Stack",
-    },
-    {
-      id: 4,
       title: "SATYAM PRINTING PRESS",
       shortDescription:
         "A modern full-stack printing and customization platform for premium invitation cards and commercial printing services.",
@@ -207,6 +173,69 @@ export const portfolioData = {
 
       category: "Ongoing Project",
     },
+    {
+  id: 4,
+  title: "RainRoute AI",
+  shortDescription:
+    "An intelligent weather-aware route planning and navigation platform that helps travelers detect and avoid rain along their journey.",
+
+  description:
+    "A full-stack intelligent weather navigation platform designed to help users plan safer journeys by analyzing real-time and forecast weather conditions along their entire route. RainRoute AI combines route mapping, weather forecasting, rain intensity analysis, live GPS navigation, vehicle selection, and dynamic alerts to provide users with a weather-aware travel experience.",
+
+  fullDetails:
+    "RainRoute AI is a modern full-stack weather-aware navigation platform that analyzes weather conditions across the complete journey from origin to destination. Instead of showing weather only at the current location, the system samples multiple points along the route and matches weather forecasts with the estimated arrival time at each location. The platform visualizes rain intensity using color-coded route segments and provides weather information, alerts, estimated arrival time, distance, vehicle-specific navigation, live GPS tracking, journey progress, and upcoming weather conditions. Users can select different vehicle types such as Bike, Car, Auto, Truck, or Bus and use live navigation to monitor their journey in real time.",
+
+  features: [
+    "Weather-aware route analysis",
+    "Real-time rain detection along the entire route",
+    "Color-coded route based on rain intensity",
+    "Weather forecast matched with estimated arrival time",
+    "Live GPS navigation and location tracking",
+    "Real-time vehicle speed and journey progress",
+    "Bike, Car, Auto, Truck & Bus vehicle selection",
+    "Animated vehicle movement along the route",
+    "Distance, ETA and remaining journey tracking",
+    "Interactive weather timeline",
+    "Dynamic rain and safety alerts",
+    "Current location detection",
+    "Route weather markers and upcoming weather events",
+    "Smart departure recommendations",
+    "Responsive modern dark/light UI",
+    "User authentication and saved trips",
+  ],
+
+  challenge:
+    "The main challenge was accurately predicting weather conditions at different points of a journey based on both location and estimated arrival time. The system also needed to continuously update route progress, GPS location, vehicle movement, weather conditions, and safety alerts without disrupting the navigation experience.",
+
+  solution:
+    "Implemented route sampling and distance-based ETA calculations to determine when the user is expected to reach each point of the journey. Weather forecast data is then matched with each waypoint's estimated arrival time. The frontend visualizes rain intensity through color-coded route segments and interactive weather timelines. Live browser geolocation is used for GPS tracking, while vehicle-specific speeds and animated markers provide a navigation experience similar to modern ride and navigation applications. REST APIs, JWT authentication, and MongoDB are used for backend services and user data management.",
+
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "Tailwind CSS",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST API",
+    "JWT",
+    "Leaflet",
+    "OpenStreetMap",
+    "OpenWeather API",
+    "Geolocation API",
+    "Framer Motion",
+    "Git",
+    "GitHub",
+  ],
+
+  githubUrl: "https://github.com/satyamkrsah/RainRoute-Ai",
+  liveUrl: "https://rainroute-ai.vercel.app",
+  image: rainroute,
+  category: "Ongoing Project",
+},
   ],
   education: {
     degree: "Bachelor of Engineering in Computer Science & Engineering",
